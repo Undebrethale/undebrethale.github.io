@@ -1,0 +1,39 @@
+body{
+    background-color: gray;
+    font-size: 105%;
+    font-family: "Comic Sans MS", 'Times New Roman', Times, serif;
+    animation: PopUp 2.5s forwards;
+    color: white;
+    text-align: center;
+}
+
+input{
+    font-family: "Comic Sans MS", 'Times New Roman', Times, serif;
+    font-size: 120%;
+    margin: 20px;
+}
+
+button{
+    font-size: 120%;
+    font-family: "Comic Sans MS", 'Times New Roman', Times, serif;
+
+}
+
+button:hover{
+    font-size: 150%;
+
+}
+
+@keyframes PopUp {
+    
+    0%{
+        opacity: 0;
+        transform: translateY(27px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
