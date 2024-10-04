@@ -1,21 +1,21 @@
 body{
     background-color: gray;
     font-size: 105%;
-    font-family: "Comic Sans MS", 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     animation: PopUp 2.5s forwards;
     color: white;
     text-align: center;
 }
 
 input{
-    font-family: "Comic Sans MS", 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 120%;
     margin: 20px;
 }
 
 button{
     font-size: 120%;
-    font-family: "Comic Sans MS", 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 

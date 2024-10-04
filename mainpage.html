@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
+    <link rel="icon" href="minecraftmods.ico" type="image/x-icon">
+    <link rel="stylesheet" href="mainpage.css">
 </head>
 <body>
     <header>
@@ -11,9 +13,37 @@
     </header>
 
     <main>
-        <div class="forge">
-            <button class="forgebutton">Forge</button>
+
+        <div class="mods">
+
+            <img src="forge.png">
+
+            <button class="forgebutton" onclick="window.location.href='/forge.html';">Forge</button>
+
+        </div>
+
+        <div class="mods">
+
+            <img src="neoforge.png">
+
+            <button onclick="window.location.href='/neoforge.html';" class="neoforgebutton"></button>
+
+        </div>
+
+        <div class="mods">
+
+            <img src="fabric.png">
             
+            <button class="fabricbutton" onclick="window.location.href='/fabric.html';"></button>
+
+        </div>
+
+        <div class="mods">
+
+            <img src="mod-storage.png">
+
+            <button class="mod-storage-button" onclick="window.location.href='/mod-storage.html';"></button>
+
         </div>
     </main>
 </body>
