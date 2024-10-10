@@ -9,6 +9,8 @@ body{
 
         .navbar {
             overflow: hidden;
+            display: flex;
+            justify-content: center;
         }
 
         .navbar a {
@@ -32,7 +34,7 @@ body{
             border: none;
             outline: none;
             color: black;
-            padding: 14px 16px;
+            padding: 25px 21px;
             background-color: inherit;
             font-family: inherit;
             margin: 0;
@@ -69,6 +71,10 @@ body{
 
         .textaligncenter{
             text-align: center;
+        }
+
+        .abs{
+            position: absolute;
         }
 
     @keyframes PopUp {
