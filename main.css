@@ -13,7 +13,7 @@ body{
 
         .navbar a {
             float: left;
-            font-size: 16px;
+            font-size: 18px;
             color: black;
             text-align: center;
             padding: 14px 16px;
@@ -28,7 +28,7 @@ body{
 
         /* Dropdown button */
         .dropdown .dropbtn {
-            font-size: 16px;  
+            font-size: 18px;  
             border: none;
             outline: none;
             color: black;
@@ -36,6 +36,10 @@ body{
             background-color: inherit;
             font-family: inherit;
             margin: 0;
+        }
+
+        .dropbtn:hover{
+            text-decoration: underline;
         }
 
         /* Dropdown content (hidden by default) */
@@ -63,16 +67,19 @@ body{
             display: block;
         }
 
+        .textaligncenter{
+            text-align: center;
+        }
+
     @keyframes PopUp {
         
         0%{
             opacity: 0;
-            transform: translateY(-25px);
         }
 
         100%{
             opacity: 1;
-            transform: translateY(0px);
+
         }
 
     }
