@@ -34,7 +34,7 @@ body{
             border: none;
             outline: none;
             color: black;
-            padding: 25px 21px;
+            padding: 25px 42px;
             background-color: inherit;
             font-family: inherit;
             margin: 0;
@@ -75,6 +75,29 @@ body{
 
         .abs{
             position: absolute;
+            margin: 6px;
+        }
+
+        #slideshow{
+            border-radius: 55px;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .mainarea{
+
+            border-radius: 55px;
+            border: 1px solid black;
+            margin: 20px;
+            background-color: black;
+
+        }
+
+        .mainarea h3{
+            color: white;
         }
 
     @keyframes PopUp {
