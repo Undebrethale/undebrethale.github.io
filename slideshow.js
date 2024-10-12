@@ -1,7 +1,7 @@
 
 let currentIndex = 0;
 
-const images = ["xpadsix.jpg", "packageimg.jpg", "fanitemimg.jpg"];
+const images = ["xpadsix.jpg", "package.jpg", "fanitemimg.jpg"];
 const imageElement = document.getElementById("image");
 
 function switchImage(){
