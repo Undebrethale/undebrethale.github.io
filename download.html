@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downlaod</title>
+    <link rel="stylesheet" href="download.html">
+    <link rel="icon" href="/xtakeicon.ico" type="image/x-icon">
+
+    <style>
+
+        button{
+
+            text-align: center;
+            margin: 125px;
+            background-color: blue;
+            color: white;
+            font-size: 150%;
+            padding: 8px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 70px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <button onclick="downloadFile()">Download File</button>
+
+    <script>
+        function downloadFile() {
+
+            const link = document.createElement('a');
+
+            link.href = 'minecraft.jar';  
+
+            link.download = 'minecraft.jar';   
+            
+            document.body.appendChild(link);
+            link.click();
+
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
