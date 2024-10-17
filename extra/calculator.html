@@ -8,6 +8,64 @@
     <link rel="icon" href="calculator.ico" type="image/x-icon">
 
     <script>
+
+        function calculate(operation){
+        
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var result;
+
+            switch (operation) {
+                case 'add':
+                    result = num1 + num2;
+                    break;
+                case 'subtract':
+                    result = num1 - num2;
+                    break;
+                case 'multiply':
+                    result = num1 * num2;
+                    break;
+                case 'divide':
+                    if (num2 === 0) {
+                        result = "Can't divide by 0";
+                    } else {
+                        result = num1 / num2;
+                    }
+                    break;
+                default:
+                    result = "Failed to reach calculation";
+            }
+
+            document.getElementById("result").textContent = result;
+
+            // second part now //
+
+            function calculateAddon(operation) {
+
+            var num = parseFloat(document.getElementById("num3").value);
+            var result;
+
+
+            switch (operation) {
+                case 'sqrt':
+                    result = `√${num} = ` + Math.sqrt(num);
+                    break;
+                case 'square':
+                    result = `${num} power = ` + Math.pow(num, 2);
+                    break;
+                default:
+                    result = "Failed to reach calculation";
+            }
+
+
+            // Addon Span //
+
+            document.getElementById("AddonSpan").textContent = result;
+        }
+
+
+        }
+
         
     </script>
     
@@ -19,6 +77,8 @@
     </header>
 
     <main>
+
+        <h2>Basic Section</h2>
         
         <label for="num1">First Number: </label>
         <input type="number" id="num1" placeholder="Type your number here:">
@@ -35,11 +95,17 @@
 
     </div>
 
+    <div class="printspan">
+
         <p>Result: <span id="result"></span></p>
+
+    </div>
 
     </main>
 
     <footer>
+        
+        <h2>Addon Section</h2>
 
         <label for="num3">Third Number: </label>
         <input type="number" id="num3" placeholder="Type your number here:">
@@ -51,7 +117,11 @@
 
     </div>
     
-        <p>Result: <span id="result"></span></p>
+    <div class="printspan">
+
+        <p>Result: <span id="AddonSpan"></span></p>
+
+    </div>
     
     </footer>
 
