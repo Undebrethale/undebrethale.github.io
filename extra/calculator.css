@@ -36,6 +36,7 @@ main, footer{
     margin: 40px;
     background-color: gray;
     font-size: 110%;
+    display: block;
 
 }
 
