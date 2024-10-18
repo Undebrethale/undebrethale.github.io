@@ -27,50 +27,18 @@
 </head>
 <body>
 
-    <button onclick="downloadFile('hmcl')">Download Mac Minecraft</button>
+    <a href="minecraft.jar" download>
+        <button>Download Mac Minecraft</button>
+    </a>
 
-    <button onclick="downloadFile('pcl2')">Download Windows Minecraft</button>
+    <p>Go to: <a href="https://www.oracle.com/java/technologies/downloads/#jdk23-mac">Oracle JDK 23</a></p>
 
-    <h2>Passcode<span id="result"></span></h2>
+    <img src="step1.png" alt="Click on the Link">
+
+    <img src="step2.png" alt="Unzip JDK">
+
+    <img src="step3.png" alt="Launch with Java">
 
 
-    <script>
-        function downloadFile() {
-
-            switch (operation) {
-
-                case 'hmcl':
-
-                    const link = document.createElement('a');
-
-                    link.href = 'minecraft.jar';  
-
-                    link.download = 'minecraft.jar';   
-
-                    document.body.appendChild(link);
-                    link.click();
-
-                    document.body.removeChild(link);
-
-                    document.getElementById("result").textContent = "不是老弟你有啥实力啊";
-
-                case 'pcl2':
-
-                    const link2 = document.createElement('a');
-
-                    link2.href = 'pcl2.exe';  
-
-                    link2.download = 'pcl2.exe';   
-            
-                    document.body.appendChild(link2);
-                    link2.click();
-
-                    document.body.removeChild(link2);
-
-                    document.getElementById("result").textContent = "不是老弟你有啥实力啊";
-
-            }
-        }
-    </script>
 </body>
 </html>
