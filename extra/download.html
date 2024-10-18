@@ -6,23 +6,70 @@
     <title>Downlaod</title>
     <link rel="stylesheet" href="download.html">
     <link rel="icon" href="/xtakeicon.ico" type="image/x-icon">
+
+    <style>
+
+        button{
+
+            text-align: center;
+            margin: 125px;
+            background-color: blue;
+            color: white;
+            font-size: 150%;
+            padding: 8px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 70px;
+
+        }
+
+    </style>
+
 </head>
 <body>
-    <button onclick="downloadFile()">Download File</button>
+
+    <button onclick="downloadFile('hmcl')">Download Mac Minecraft</button>
+
+    <button onclick="downloadFile('pcl2')">Download Windows Minecraft</button>
+
+    <h2>Passcode<span id="result"></span></h2>
+
 
     <script>
         function downloadFile() {
 
-            const link = document.createElement('a');
+            switch (operation) {
 
-            link.href = 'minecraft.jar';  
+                case 'hmcl':
 
-            link.download = 'minecraft.jar';   
+                    const link = document.createElement('a');
+
+                    link.href = 'minecraft.jar';  
+
+                    link.download = 'minecraft.jar';   
+
+                    document.body.appendChild(link);
+                    link.click();
+
+                    document.body.removeChild(link);
+
+                    document.getElementById("result").textContent = "不是老弟你有啥实力啊";
+
+                case 'pcl2':
+
+                    const link2 = document.createElement('a');
+
+                    link2.href = 'pcl2.exe';  
+
+                    link2.download = 'pcl2.exe';   
             
-            document.body.appendChild(link);
-            link.click();
+                    document.body.appendChild(link2);
+                    link2.click();
 
-            document.body.removeChild(link);
+                    document.body.removeChild(link2);
+
+                    document.getElementById("result").textContent = "不是老弟你有啥实力啊";
+
+            }
         }
     </script>
 </body>
