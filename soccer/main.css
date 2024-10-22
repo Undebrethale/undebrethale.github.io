@@ -1,0 +1,146 @@
+
+body{
+
+    animation: PopUp 2.8s forwards;
+    font-family: "Roboto", 'Times New Roman', Times, serif;
+    font-size: 101.75%;
+    margin: 0px;
+}
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    float: left;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+    font-size: 18px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 25px 42px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropbtn:hover{
+    text-decoration: underline;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Top Technology*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.textaligncenter{
+    text-align: center;
+}
+
+@keyframes PopUp {
+        
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+
+    }
+}
+
+#firstflat{
+    text-align: center;
+    background-color: black;
+    color: red;
+    margin: 0px;
+    padding: 5.5px;
+    box-sizing: border-box;
+}
+
+nav{
+
+    background-color: gray;
+
+}
+
+#logo{
+
+    position: absolute;
+    top: 90px;
+    left: 1px;
+    margin: 8px;
+
+}
+
+#slideshow{
+    text-align: center;
+}
+
+#image{
+    border: 2px solid black;
+    border-radius: 60px;
+
+}
+
+#image:hover{
+
+    size: 108.5%;
+    opacity: 0.79;
+
+}
+
+.switchbar{
+
+    font-size: 1000%;
+    opacity: 0.95;
+    border: none;
+
+}
+
+.switchbar:hover{
+
+    opacity: 0.75;
+    
+
+}
+
+
+/* Part Code made by Yuan and part code/soccer contants given by Xuanhan, giving full permission to him in using all the codes in anyways 
+and performing products in any way. */
