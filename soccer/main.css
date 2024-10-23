@@ -5,6 +5,9 @@ body{
     font-family: "Roboto", 'Times New Roman', Times, serif;
     font-size: 101.75%;
     margin: 0px;
+    min-width: 1080px;    /* 1080p is already back in time, now we use 2k and 4k! */
+
+
 }
 
 .navbar {
@@ -19,7 +22,7 @@ body{
     color: black;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+
 }
 
 
@@ -116,31 +119,39 @@ nav{
 #image{
     border: 2px solid black;
     border-radius: 60px;
+    margin-top: 50px;
 
 }
 
 #image:hover{
 
-    size: 108.5%;
     opacity: 0.79;
 
 }
 
 .switchbar{
 
-    font-size: 1000%;
+    font-size: 600%;
     opacity: 0.95;
     border: none;
+    position: relative;
+    transform: translateY(-249px);
+    background-color: white;
+    margin: 20px;
 
 }
 
 .switchbar:hover{
 
     opacity: 0.75;
-    
+    border: 1.5px solid black;
+    border-radius: 10px;
+    background-color: whitesmoke;
 
 }
 
+a:hover{
 
-/* Part Code made by Yuan and part code/soccer contants given by Xuanhan, giving full permission to him in using all the codes in anyways 
-and performing products in any way. */
+    text-decoration: underline;
+
+}
