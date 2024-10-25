@@ -1,7 +1,7 @@
 
 let currentIndex = 0;
 
-const images = ["xpadsix.jpg", "package.jpg", "fanitemimg.jpg"];
+const images = ["xpadsix.jpg", "mobilepackage.jpg", "macbookpro.jpg"];
 const imageElement = document.getElementById("image");
 
 function switchImage(){
@@ -16,7 +16,17 @@ function switchImage(){
 
 }
 
-setInterval(switchImage, 4333);
+setInterval(switchImage, 5000);
+
+function minusImage(){
+
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = images.length - 1;
+    }
+    imageElement.src = images[currentIndex];
+    
+  }
 
 
-// Why can you use javascript with out an JDK but need one for actual Java? //
+

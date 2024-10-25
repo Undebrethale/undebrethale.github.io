@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xtake</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="/xtakeicon.ico" type="image/x-icon">
+    <link rel="icon" href="xtakeicon.ico" type="image/x-icon"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
   <a href="index.html" class="abs">
-    <img src="/xtakelogo.png" alt="Xtake Logo" class="abs">
+    <img src="xtakelogo.png" alt="Xtake Logo" class="abs">
   </a>
 
     <nav class="navbar">
@@ -22,9 +26,9 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="/xpad.html/#xpad2022">Xpad 2022</a>
-            <a href="/xpad.html/#xpad2023">Xpad 2023</a>
-            <a href="/xpad.html/#xpad2024">Xpad 2024</a>
+            <a href="xpad.html/#xpad2022">Xpad 2022</a>
+            <a href="xpad.html/#xpad2023">Xpad 2023</a>
+            <a href="xpad.html/#xpad2024">Xpad 2024</a>
           </div>
         </div>
         <div class="dropdown">
@@ -32,9 +36,9 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="/xphone.html/#xphone2022">Xphone 2022</a>
-            <a href="/xphone.html/#xphone2023">Xphone 2023</a>
-            <a href="/xphone.html/#xphone2024">Xphone 2024</a>
+            <a href="xphone.html/#xphone2022">Xphone 2022</a>
+            <a href="xphone.html/#xphone2023">Xphone 2023</a>
+            <a href="xphone.html/#xphone2024">Xphone 2024</a>
           </div>
         </div>
         <div class="dropdown">
@@ -42,9 +46,9 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="/takebook.html/#takebook2022">Takebook 2022</a>
-            <a href="/takebook.html/#takebook2023">Takebook 2023</a>
-            <a href="/takebook.html/#takebook2024">Takebook 2024</a>
+            <a href="takebook.html/#takebook2022">Takebook 2022</a>
+            <a href="takebook.html/#takebook2023">Takebook 2023</a>
+            <a href="takebook.html/#takebook2024">Takebook 2024</a>
           </div>
         </div>
         <div class="dropdown">
@@ -52,9 +56,9 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="/pc.html/#pc2022">PC 2022</a>
-            <a href="/pc.html/#pc2023">PC 2023</a>
-            <a href="/pc.html/#pc2024">PC 2024</a>
+            <a href="pc.html/#pc2022">PC 2022</a>
+            <a href="pc.html/#pc2023">PC 2023</a>
+            <a href="pc.html/#pc2024">PC 2024</a>
           </div>
         </div>
         <div class="dropdown">
@@ -62,9 +66,9 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="/fanitem.html/#shirt">Xtake Shirt</a>
-            <a href="/fanitem.html/#stickers">Xtake Stickers</a>
-            <a href="/fanitem.html/runningshoes">Xtake Fly Future</a>
+            <a href="fanitem.html/#shirt">Xtake Shirt</a>
+            <a href="fanitem.html/#stickers">Xtake Stickers</a>
+            <a href="fanitem.html/runningshoes">Xtake Fly Future</a>
           </div>
         </div>
         <div class="dropdown">
@@ -80,22 +84,26 @@
       </div>
 
     </nav>
-
     
+    <section id="slideshow">
 
-      <div id="slideshow">
-          <img src="xpadsix.jpg" id="image" alt="xpad 6"> 
-      </div>
+      <button id="prev" onclick="minusImage()" class="switchbar">&#10094;</button>
 
-      <!--xpadsix.jpg, package.jpg, fanitemimg.jpg-->
+    <a href="midchange.html">
+      <img id="image" src="xpadsix.jpg" alt="Slideshow Image">
+    </a>
 
-      <script src="slideshow.js"></script>
+      <button id="next" class="switchbar" onclick="switchImage()">&#10095;</button>
+
+      <script src="slideshow.js"></script> <!--External Javascript-->
+
+  </section>
 
     <main>
 
       <div class="mainarea">
           
-        <img class="mainimg" src="xphoneimg.jpg" alt="">   
+        <img class="mainimg" src="xphone.jpg" alt="xphoneimg" width="500px" height="500px">   
         <h3 class="explaination">Better than Iphone, cheaper than Android.</h3>
 
         <button class="learnmore">Learn More</button>  
@@ -105,7 +113,7 @@
 
       <div class="mainarea">
           
-        <img class="mainimg" src="xpad.jpg" alt="">    
+        <img class="mainimg" src="xpad.jpg" alt="xpadimg">    
         <h3 class="explaination">Extremely Powerful, more than 100% worth it.</h3>
 
         <button class="learnmore">Learn More</button>
@@ -115,8 +123,8 @@
 
       <div class="mainarea">
           
-        <img class="mainimg" src="takebook.jpg" alt="">      
-        <h3 class="explaination">Twice Fold, the art of technology.</h3>
+        <img class="mainimg" src="takebook.jpg" alt="takebookimg">      
+        <h3 class="explaination">Twice Folding, the art of technology.</h3>
 
         <button class="learnmore">Learn More</button>
         <button class="buy">Buy</button>
@@ -125,7 +133,7 @@
 
       <div class="mainarea">
           
-        <img class="mainimg" src="pc.jpg" alt="">     
+        <img class="mainimg" src="pc.jpg" alt="pcimg">     
         <h3 class="explaination">The most powerful set of personal computer.</h3>
 
         <button class="learnmore">Learn More</button>
@@ -135,7 +143,7 @@
 
       <div class="mainarea">
           
-        <img class="mainimg" src="xtakewatch.jpg" alt="">     
+        <img class="mainimg" src="xtakewatch.jpg" alt="watchimg">     
         <h3 class="explaination">Smarter than Apple, cheaper than android.</h3>
 
         <button class="learnmore">Learn More</button>
@@ -145,7 +153,7 @@
 
       <div class="mainarea">
           
-        <img class="mainimg" src="fanitem.jpg" alt="">     
+        <img class="mainimg" src="fanitem.jpg" alt="fanitemimg">     
         <h3 class="explaination">All the fun and fan items of Xtake.</h3>
 
         <button class="learnmore">Learn More</button>
